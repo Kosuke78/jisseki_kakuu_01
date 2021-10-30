@@ -1,0 +1,440 @@
+/****************************************
+* リセットCSS
+*****************************************/
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike,
+strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-size: 100%;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	letter-spacing: 1.5px;
+	line-height: 1.5;
+}
+img {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+a {
+	text-decoration: none;
+}
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+/****************************************
+* ヘッダー
+*****************************************/
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 0 10px 0 20px;
+}
+.header_title {
+    font-size: 1.5rem;
+}
+.nav {
+    display: flex;
+}
+.nav-item {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+.nav-item:hover {
+    color: rgb(121, 118, 118);
+}
+.menu {
+    display: none;
+}
+/* インプット チェックボックス 非表示 */
+#btn {
+    display: none;
+}
+/* ハンバーガーボタン PC時は非表示 */
+.ham_btn {
+    display: none;
+}
+/* メニューリスト PC */
+.menu_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+/****************************************
+* メイン
+*****************************************/
+.mv_inner {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.mv_title_inner {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+.mv_title {
+    font-size: 2.5rem;
+    color: #fff;
+    padding-bottom: 10px;
+}
+.item-des-inner {
+    position: relative;
+    height: 1000px;
+}
+.item-card-u,.item-card-d {
+    display: flex;
+    border: 1px solid #fff;
+    padding: 100px;
+    width: 800px;
+    background-color: rgb(36, 34, 34);
+}
+.item-card-u {
+    position: absolute;
+    top: 100px;
+    left: 170px;
+    z-index: 10;
+}
+.item-card-d {
+    position: absolute;
+    top: 470px;
+    left: 300px;
+    z-index: 11;
+}
+.item-card-d-sp {
+    display: none;
+}
+.item-card-img {
+    width: 300px;
+    height: auto;
+}
+.common-title {
+    margin:30px 0px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+}
+.item-card-img-inner {
+    max-width: 300px;
+    height: auto;
+}
+.item-card-des-inner {
+    padding: 30px;
+    color: #fff;
+}
+.product-inner {
+    margin-bottom:100px;
+}
+.product-item-inner {
+    display: flex;
+    justify-content: center;
+}
+.product-item-img-inner-l {
+    position: relative;
+    max-width: 600px;
+    height: auto;
+}
+.product-img-l {
+    width: 100%;
+}
+.product-item-img-inner-r {
+    height: 406.19px;
+}
+.img-r-inner {
+    position: relative;
+    width: auto;
+    height: 50%;
+}
+.filter {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation-name:ani-product-img-back;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes ani-product-img-back {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+} 
+.product-item-img-inner-l:hover .filter {
+    animation-name:ani-product-img;
+    animation-duration: 0.5s;
+    animation-fill-mode:forwards;
+}
+.img-r-inner:hover .filter {
+    animation-name:ani-product-img;
+    animation-duration: 0.5s;
+    animation-fill-mode:forwards;
+}
+@keyframes ani-product-img {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.product-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #fff;
+    font-size: 1.5rem;
+}
+.news-inner {
+    margin-bottom: 100px;
+}
+.news-item-inner {
+    text-align: left;
+    margin: 0 300px;
+    padding: 30px;
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+}
+.news-item {
+    padding: 15px;
+    border-bottom: 1px dotted #000;
+}
+.news-item a {
+    color: #000;
+    text-decoration: none;
+}
+.news-item a:hover {
+    color: rgb(65, 63, 63);
+}
+.news-item:last-child {
+    border-bottom: none;
+}
+.news-item-des {
+    display: inline-block;
+}
+/****************************************
+* フッター
+*****************************************/
+.footer_inner {
+    background-color: #000;
+    font-size: 0;
+    height: 100px;
+    padding: 30px 30px 0px 30px;
+    color: #fff;
+}
+.footer_nav { 
+    text-align: center;
+}
+.footer_nav_item {
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+.footer_nav_item:hover {
+    color: rgb(121, 118, 118);
+}
+.copyright {
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    font-size: 0.6rem;
+}
+.fab {
+    font-size: 1rem;
+    width: 30px;
+    height: 30px;
+}
+
+@media screen and (max-width:768px) {
+    .nav {
+        display: none;
+    }
+    .mv_title_inner {
+        top: 50px;
+        left: 70px;
+    }
+    .mv_title {
+        font-size: 1.2rem;
+    }
+    .item-card-u,.item-card-d-sp {
+        position: static;
+        display: block;
+        width: 100%;
+        padding: 0;
+        border: none;
+    }
+    .item-card-d .item-card-des-inner {
+        padding-top: 200px;
+    }
+    .item-des-inner {
+        position: static;
+    }
+    .item-card-d {
+        display: none;
+    }
+    .item-des-inner {
+        height: auto;
+        margin-bottom: 100px;
+    }
+    .item-car-img-inner {
+        text-align: center;
+    }
+    .item-card-d-sp {
+        display: block;
+        background-color: rgb(36, 34, 34);
+        margin-top: 20px;
+    }
+    .item-card-img-inner {
+        width: 100%;
+        max-width: none;
+    }
+    .item-card-img {
+        width: 100%;
+    }
+    .news-inner {
+        margin: 0;
+    }
+    .news-item-inner {
+        margin: 20px;
+        padding: 0;
+    }
+    .news-item-des {
+        display: block;
+    }
+    .product-item-inner {
+        display: block;
+    }
+    .product-item-img-inner-l {
+        font-size: 0;
+        height: auto;
+        max-width: none;
+    }
+    .product-item-img-inner-r {
+        font-size: 0;
+        height: auto;
+    }
+    .product-img-l,.product-img-r {
+        width: 100%;
+        height: auto;
+        font-size: 0;
+    }
+    .footer_inner {
+        padding: 10px 5px 0;
+    }
+    .footer_nav_item {
+        padding: 5px;
+        font-size: 0.8rem;
+    }
+    .menu {
+        display: block;
+    }
+    .ham_btn {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        /* スライド画面表示後、ボタンを押せるように一番上に置く */
+        z-index:200;
+        top: 3px;
+        }
+        .ham_btn span::before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: -12.5px;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        height: 2px;
+        width: 20px;
+        background-color: #fff;
+        }
+        .ham_btn span {
+        position: absolute;
+        display: inline-block;
+        top: 25px;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        height: 2px;
+        width: 20px;
+        background-color: #fff;
+        }
+        .ham_btn span::after {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 12.5px;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        height: 2px;
+        width: 20px;
+        background-color: #fff;
+        }
+        #btn:checked ~ .ham_btn span {
+        background-color: transparent;
+        }
+        #btn:checked ~ .ham_btn span::before {
+        transform: rotate(45deg);
+        left: 0;
+        top: 0;
+        }
+        #btn:checked ~ .ham_btn span::after {
+        transform: rotate(-45deg);
+        top: 0;
+        left: 0;
+        
+        }
+        .menu_list {
+        flex-direction: column;
+        position: fixed;
+        /* ハンバーガーボタンより下に来るように設定 */
+        z-index: 100;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .9);
+        font-size: 20px;
+        font-weight: 100;
+        /* 右側に画面分隠す */
+        transform: translateX(100%);
+        transition: .3s ease;
+        margin: 0;
+        }
+        #btn:checked ~ .menu_list {
+        transform: translateX(0);
+        }
+}
