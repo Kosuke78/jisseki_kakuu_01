@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <? echo realpath("/img/mv.jpg"); ?>
     <header>
         <div class="header_inner">
             <div class="header_logo">
