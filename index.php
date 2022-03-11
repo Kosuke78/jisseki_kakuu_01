@@ -13,6 +13,8 @@
     <meta property="og:image" content="https://calm-meadow-04676.herokuapp.com/assets/images/mv.jpg" />
     <meta property="og:site_name" content="Sound_Around" />
     <meta property="og:description" content="架空のイヤホン製品を紹介するWebサイトです。イヤホンで音楽を聴くと世界が変わります。" />
+    <!-- facebook用の設定 -->
+    <meta property="fb:app_id" content="686522249191777" />
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
