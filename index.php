@@ -8,9 +8,9 @@
     <meta property="og:title" content="Sound_AroundのTOPページ" />
     <meta property="og:type" content="website" />
     <!-- URLは絶対パスで指定する -->
-    <meta property="og:url" content="<?php echo __DIR__ ?>/index.php" /> 
+    <meta property="og:url" content="<?php __DIR__ ?>/index.php" /> 
     <!-- 画像は絶対パスで指定する -->
-    <meta property="og:image" content="<?php echo __DIR__ ?>/img/mv.jpg" />
+    <meta property="og:image" content="<?php __DIR__ ?>/img/mv.jpg" />
     <meta property="og:site_name" content="Sound_Around" />
     <meta property="og:description" content="架空のイヤホン製品を紹介するWebサイトです。イヤホンで音楽を聴くと世界が変わります。" />
     <link rel="stylesheet" href="./style.css">
